@@ -1,3 +1,5 @@
-from utillity import date
-value = float(input('Digite um preço: R$'))
-date.resume(value, 20, 10)
+from utillity import coin
+from utillity.datebase import readvalue
+commom = 'Digite um preço:R$ '
+value = readvalue(commom)
+coin.resume(value, 20, 10)
