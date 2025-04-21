@@ -1,0 +1,1 @@
+#Construir um sistema para gerenciar alunos de uma turma, registrando seus nomes, notas e calculando médias individuais e da turma.
