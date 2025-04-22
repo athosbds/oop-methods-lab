@@ -1,0 +1,1 @@
+#Você deve desenvolver um sistema em Python com Programação Orientada a Objetos para gerenciar uma turma de alunos. O sistema deve funcionar de forma interativa, utilizando um laço while que continuará rodando até que o professor deseje encerrar.
