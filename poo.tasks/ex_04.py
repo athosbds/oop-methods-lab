@@ -23,7 +23,6 @@ class ShoppingCart():
     def clear_shoppingcart(self):
         self.itens.clear()
         print('Carrinho vazio.')
-
 cart = ShoppingCart()
 cart.ad_item('Feijão', 2)
 cart.ad_item('Arroz', 3)
