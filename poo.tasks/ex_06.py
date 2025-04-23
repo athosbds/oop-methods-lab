@@ -1,1 +1,39 @@
 #Você deve desenvolver um sistema em Python com Programação Orientada a Objetos para gerenciar uma turma de alunos. O sistema deve funcionar de forma interativa, utilizando um laço while que continuará rodando até que o professor deseje encerrar.
+
+class Student():
+    def __init__(self, name, grades):
+        self.name = str(name)
+        self.grades = grades
+    def avarage(self):
+        return sum(self.grades) / len(self.grades)
+class ClassesStudents():
+    def __init__(self):
+        self.class_students =[]
+    def adc_student(self, student):
+        self.class_students.append(student)
+    def show_details(self):
+        for student in self.class_students:
+            print(f'\nAluno: {student.name}\nNotas: {student.grades}')
+def options():
+    while True:
+        print(""" Registro De Classe
+    1 - Adicionar Estudante
+    2 - Listar Alunos
+    3 - Limpar Cache""")
+        try:
+            choose = int(input('Opção: '))
+            if choose == 1:
+                name = str(input('Nome: '))
+                grade = [float(input('Nota: ')) for x in range(3)]
+                student = Student(name, grade)
+                class_01 = ClassesStudents()
+                class_01.adc_student(student)
+            if choose == 2:
+                print(f'REGISTRO DA TURMA')
+                class_01.show_details()
+            if choose == 3:
+                print('Finalizando.')
+                break
+        except (ValueError, IndexError):
+            print('ERRO! OPÇÃO OU INDENTAÇÃO INDISPONÍVEL')
+options()
