@@ -14,8 +14,10 @@ class ClassesStudents():
     def clear_students(self):
         self.class_students.clear()
     def show_details(self):
+        if not self.class_students:
+            print('\nNenhum Aluno')
         for student in self.class_students:
-            print(f'\nAluno: {student.name}\nNotas: {student.grades}')
+            print(f'\nAluno: {student.name}Notas: {student.grades}')
         
 def options():
     class_01 = ClassesStudents()
@@ -33,7 +35,7 @@ def options():
                 student = Student(name, grade)
                 class_01.adc_student(student)
             if choose == 2:
-                print(f'REGISTRO DA TURMA')
+                print(f'\nREGISTRO DA TURMA')
                 class_01.show_details()
             if choose == 3:
                 class_01.clear_students()
