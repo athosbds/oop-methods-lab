@@ -17,7 +17,7 @@ class ClassesStudents():
         if not self.class_students:
             print('\nNenhum Aluno')
         for student in self.class_students:
-            print(f'\nAluno: {student.name}Notas: {student.grades}')
+            print(f'\nAluno: {student.name}\nNotas: {student.grades}')
         
 def options():
     class_01 = ClassesStudents()
