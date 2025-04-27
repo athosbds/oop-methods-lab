@@ -17,25 +17,25 @@ class ClassesStudents():
         if not self.class_students:
             print('\nNenhum Aluno')
         for student in self.class_students:
-            print(f'\nAluno: {student.name}\nNotas: {student.grades}')
+            print(f'Aluno: {student.name}\nNotas: {student.grades}')
         
 def options():
     class_01 = ClassesStudents()
     while True:
         print(""" Registro De Classe
-    1 - Adicionar Estudante
-    2 - Listar Alunos
-    3 - Limpar Cache
-    4 - Sair""")
+1 - Adicionar Estudante
+2 - Listar Alunos
+3 - Limpar Cache
+4 - Sair""")
         try:
-            choose = int(input('Opção: '))
+            choose = int(input('\nOpção: '))
             if choose == 1:
                 name = str(input('Nome: '))
                 grade = [float(input('Nota: ')) for x in range(3)]
                 student = Student(name, grade)
                 class_01.adc_student(student)
             if choose == 2:
-                print(f'\nREGISTRO DA TURMA')
+                print(f'\nREGISTRO DA TURMA\n')
                 class_01.show_details()
             if choose == 3:
                 class_01.clear_students()
