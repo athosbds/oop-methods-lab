@@ -45,8 +45,6 @@ while True:
             teams[name_team].holders(player)
         else:
             print('Time não Encontrado.')
-
-
     elif choose == 3:
         if not teams:
             print('\nNenhum Time Encontrado')
@@ -58,6 +56,3 @@ while True:
         break
     else:
         print('Inválido.')
-
-
-
