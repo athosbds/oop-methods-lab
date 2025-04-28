@@ -21,13 +21,13 @@ class Team():
                 print(player)
 teams = {}
 while True:
-    print("""GERENCIAMENTO TIME DE FUTEBOL
+    print("""\n\033[42mGERENCIAMENTO TIME DE FUTEBOL\033[m\n
 1 - Criar Time
 2 - Adicionar Jogador
 3 - Mostrar Times
 4 - Sair""")
     try:
-        choose = int(input('Opção: '))
+        choose = int(input('   \nOpção: '))
         if choose == 1:
             name = str(input('Nome Do Time: '))
             if name not in teams:
@@ -36,7 +36,7 @@ while True:
             else:
                 print('Time Existente.')
         elif choose == 2:
-            print('ADICIONANDO JOGADOR')
+            print('\nADICIONANDO JOGADOR\n')
             player_name = str(input('Nome do Jogador'))
             position = str(input('Posição: '))
             shirt_number = int(input('Número Da Camisa: '))
@@ -51,7 +51,7 @@ while True:
                 print('\nNenhum Time Encontrado')
             else:
                 for team in teams.values():
-                    print(f'Time {team.name}')
+                    print(f'Time {team.name}\n Jogadores:')
                     team.show_details()
         elif choose == 4:
             break
