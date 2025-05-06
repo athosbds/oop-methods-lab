@@ -37,7 +37,7 @@ while True:
                 print('Time Existente.')
         elif choose == 2:
             print('\nADICIONANDO JOGADOR\n')
-            player_name = str(input('Nome do Jogador'))
+            player_name = str(input('Nome do Jogador: '))
             position = str(input('Posição: '))
             shirt_number = int(input('Número Da Camisa: '))
             name_team = input('Time Escolhido: ')
