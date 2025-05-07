@@ -6,6 +6,10 @@ class Credit_Card():
         self.title = str(title)
         self.limit = float(limit)
         self.balance = float(balance)
+    def make_purchase(self, value):
+        if self.balance + value <= self.limit:
+            self.balance += value
+
 class Bank():
     def __init__(self, title_name):
         self.title_name = str(title_name)
