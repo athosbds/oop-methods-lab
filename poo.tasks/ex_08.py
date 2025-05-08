@@ -26,3 +26,14 @@ class Bank():
     def __init__(self, title_name):
         self.title_name = str(title_name)
         self.cards = []
+    def add_cart(self, card):
+        if isinstance(card, Credit_Card):
+            self.cards.append(card)
+        else:
+            print('Não é um Cartão.')
+    def show_cards(self):
+        if not self.cards:
+            print('Nenhum cartão.')
+        else:
+            for card in self.cards:
+                print(f'Cartão: {card.title}\nNúmero: {self.number}\nSaldo: {self.balance}\nLimite: R$ {self.limit}')
