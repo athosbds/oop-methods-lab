@@ -1,3 +1,4 @@
+# Crie um sistema de RPG com classes Jogador e Missao, usando listas e dicionários para aceitar e concluir missões.
 
 class Quest():
     def __init__(self, title, about, reward):
