@@ -17,18 +17,18 @@ class Player():
         self.quests = []
         self.gold = float(gold)
     def accept_quest(self, quest):
-        for querue in self.quests:
-            if querue['título'] == quest.title:
-                print(f'Missão {querue.title} já aceita')
+        for q in self.quests:
+            if q['título'] == quest.title:
+                print(f'Missão {quest.title} já aceita')
                 return
-        self.quests.append(quest.quests.quest.show())
+        self.quests.append(quest.quest_show())
     def show_quests(self):
         if not self.quests:
             print(f'Não tem missões ativas')
         else:
             print(f'Missões ativas de {self.name}')
             for quest in self.quests:
-                print(f'{quest['título']} - {quest['sobre']} - {quest['reward']}')
+                print(f"{quest['título']} - {quest['sobre']} - {quest['reward']}")
     def status(self):
         print(f'Jogador: {self.name}')
         print(f'Ouro: {self.gold}')
@@ -39,3 +39,11 @@ class Player():
                 self.quests.remove(quest)
                 self.gold += quest['reward']
                 print(f'{self.name} concluiu a missão e recebeu a recompensa.')
+
+first_quest = Quest('Matar 4 Lobos', 'Mate 4 lobos e ganhe 5 ouros', 5)
+
+athos_player = Player('Athos', 0)
+athos_player.accept_quest(first_quest)
+athos_player.show_quests()
+athos_player.finish_quest('Matar 4 Lobos')
+athos_player.status()
