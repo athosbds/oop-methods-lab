@@ -15,3 +15,7 @@ class TaskManager():
     def ad_work(self, title, priority):
         new_work = Work(title, priority)
         self.works.append(new_work)
+    def display_works(self):
+        for work in self.works:
+           status =  "✅" if work.completed else "⏳"
+           print(f'Status: {status} - Tarefa: {work.title} - Prioridade: {work.priority} - ')
