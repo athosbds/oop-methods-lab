@@ -19,7 +19,8 @@ class TaskManager():
         for work in self.works:
            status =  "✅" if work.completed else "⏳"
            print(f'Status: {status} - Tarefa: {work.title} - Prioridade: {work.priority} - ')
-# Criando o gerenciador de tarefas
+    def filter_by_status(self, completed=True):
+        return [work for work in self.works if work.completed == completed]
 manager = TaskManager()
 
 # Adicionando algumas tarefas
@@ -28,7 +29,13 @@ manager.ad_work("Lavar a louça", 3)
 manager.ad_work("Fazer exercícios", 2)
 print("=== Tarefas antes de concluir ===")
 manager.display_works()
-manager.works[0].conclude(True)  
+manager.works[0].conclude(True)
+manager.works[1].conclude(True)
 # Mostrar as tarefas depois de concluir
 print("\n=== Tarefas depois de concluir uma ===")
 manager.display_works()
+print()
+for t in manager.filter_by_status(completed=False):
+    print(t)
+for t in manager.filter_by_status(completed=True):
+    print(t)
