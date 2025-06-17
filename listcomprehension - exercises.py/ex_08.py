@@ -1,3 +1,4 @@
+# Filtrar códigos que começam com vogal, têm número ímpar e múltiplo de 3 ou 5
 codes = ["A13", "B92", "C07", "D44", "E38", "F91", "G60", "H25", "I99", "J31"]
 codes_filters = [
     code for code in codes 
