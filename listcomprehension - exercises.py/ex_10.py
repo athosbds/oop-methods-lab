@@ -9,5 +9,5 @@ saldo_alto = [
     user["nome"] for user in usuarios
     if user["saldo"] > 1000
 ]
-
+print(f'Saldo Altos:')
 print(saldo_alto)
