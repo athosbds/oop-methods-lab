@@ -10,5 +10,7 @@ novas_vendas = [
    product["produto"] for product in vendas
    if product['preco'] * product['quantidade'] > 2000
 ]
-
-print(novas_vendas)
+print(f'Nível de Faturamento Produtos:')
+print('Produtos com Faturamento Alto:')
+for product in novas_vendas:
+    print(f'Produto: {product}')
