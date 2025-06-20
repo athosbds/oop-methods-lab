@@ -19,9 +19,9 @@ level_faturamento = [
    for product in vendas
 
 ]
-print(f'Nível de Faturamento Produtos:')
+print(f'NÍVEL DE FATURAMENTO:')
 for level in level_faturamento:
     print(level)
-print('\nProdutos com Faturamento Alto:')
+print('\nPRODUTOS FATURAMENTOS ALTOS:')
 for product in novas_vendas:
     print(f'Produto: {product}')
