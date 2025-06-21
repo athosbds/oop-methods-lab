@@ -1,4 +1,4 @@
-
+# Filtre e classifique produtos pelo faturamento (preço x quantidade) usando list comprehensions.
 vendas = [
     {"produto": "notebook", "preco": 3500, "quantidade": 2},
     {"produto": "mouse", "preco": 150, "quantidade": 10},

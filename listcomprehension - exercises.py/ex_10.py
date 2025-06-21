@@ -1,3 +1,4 @@
+# Liste os nomes dos usuários com saldo acima de 1000 usando list comprehension.
 usuarios = [
     {"id": 1, "nome": "Ana", "saldo": 850},
     {"id": 2, "nome": "Bruno", "saldo": 1250},
