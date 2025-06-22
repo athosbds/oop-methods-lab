@@ -1,3 +1,4 @@
+# Lista usuários e cidades da API, e filtra nomes cujas cidades começam com 'S'
 import requests
 
 url = "https://jsonplaceholder.typicode.com/users"
