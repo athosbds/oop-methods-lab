@@ -1,3 +1,4 @@
+# API JSONPlaceholder: filtra usuários com "biz" no e-mail e exibe posts com título maior que 5 caracteres.
 import requests
 url = "https://jsonplaceholder.typicode.com/users"
 posts = "https://jsonplaceholder.typicode.com/posts"
