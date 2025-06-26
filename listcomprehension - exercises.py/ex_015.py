@@ -1,3 +1,4 @@
+# Lista usuários maiores de idade e filtra os que são do Brasil usando a API randomuser.me
 import requests
 
 url = "https://randomuser.me/api/?results=20"
