@@ -13,7 +13,7 @@ if get_url.status_code == 200:
     ]
     print(f'Pessoas com 18 anos ou +')
     for user in oldest_people:
-        print(user)
+        print(f'user)
     print()
     brazilians = [
         user
