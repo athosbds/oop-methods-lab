@@ -1,3 +1,4 @@
+##Enunciado:** Consuma a Fake Store API, liste produtos com estoque maior que zero mostrando nome, categoria e quantidade, e também produtos com avaliação igual ou superior a 4.0 mostrando nome e nota.
 import requests
 
 url = 'https://fakestoreapi.com/products'
