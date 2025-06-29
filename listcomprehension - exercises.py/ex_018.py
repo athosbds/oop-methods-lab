@@ -1,3 +1,4 @@
+##Enunciado:** Consuma a API JSONPlaceholder, filtre usuários com ‘LLC’ no nome da empresa, liste nome e empresa, e mostre todos os nomes com seus telefones.
 import requests
 url = 'https://jsonplaceholder.typicode.com/users'
 get_url = requests.get(url)
