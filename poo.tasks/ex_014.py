@@ -16,7 +16,6 @@ class Customer():
         else:
             for i, buy in enumerate(self.history, start=1):
                 print(f"{i} {buy['quantidade']}x {buy['medicamento']}")
-    de
 class Medicine():
     def __init__(self, code: int, name: str, manufacturer: str, price: float, quantity: int):
         self.code = code
@@ -34,6 +33,8 @@ class Medicine():
             print(f'Medicamento Não Encontrado.')
     def availability(self):
         return self.quantity > 0
+    def __str__(self):
+        return f"{self.name} ({self.manufacturer}) - R$: {self.price}"
 # Criar medicamentos
 med1 = Medicine(101, "Paracetamol", "Medley", 10.00, 50)
 med2 = Medicine(102, "Ibuprofeno", "Neo Química", 15.00, 30)
