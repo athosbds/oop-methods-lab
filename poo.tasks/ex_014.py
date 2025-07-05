@@ -35,26 +35,15 @@ class Medicine():
         return self.quantity > 0
     def __str__(self):
         return f"{self.name} ({self.manufacturer}) - R$: {self.price}"
-
 med1 = Medicine(101, "Paracetamol", "Medley", 10.00, 50)
 med2 = Medicine(102, "Ibuprofeno", "Neo Química", 15.00, 30)
-
-
 cliente1 = Customer("Athos", 12345678900)
-
-
 cliente1.make_purchase(med1, 2)
 cliente1.make_purchase(med2, 1)
-
-
 med1.update_stock(101, -2)
 med2.update_stock(102, -1)
-
-
 print("\nHistórico de compras da cliente:")
 cliente1.show_history()
-
-
 print("\nDisponibilidade dos medicamentos:")
 print(f"{med1.name}: {'Disponível' if med1.availability() else 'Indisponível'} (Estoque: {med1.quantity})")
 print(f"{med2.name}: {'Disponível' if med2.availability() else 'Indisponível'} (Estoque: {med2.quantity})")
