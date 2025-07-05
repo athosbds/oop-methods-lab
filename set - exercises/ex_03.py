@@ -1,3 +1,4 @@
+# Análise de alunos por atividade extracurricular (futebol, xadrez, teatro)
 futebol = {"Ana", "Lucas", "João", "Thiago", "Julia"}
 xadrez = {"Ana", "Lucas"}
 teatro = {"João", "Julia", "André"}
