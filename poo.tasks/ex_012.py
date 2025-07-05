@@ -22,8 +22,6 @@ class TaskManager():
     def filter_by_status(self, completed=True):
         return [work for work in self.works if work.completed == completed]
 manager = TaskManager()
-
-# Adicionando algumas tarefas
 manager.ad_work("Estudar Python", 1)
 manager.ad_work("Lavar a louça", 3)
 manager.ad_work("Fazer exercícios", 2)
