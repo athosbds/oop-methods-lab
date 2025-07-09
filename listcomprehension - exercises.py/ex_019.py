@@ -40,6 +40,5 @@ if url_data.status_code == 200:
     SUL: {south['nome']} - {south['lat']}
     LESTE: {east['nome']} - {east['lng']}
     OESTE: {west['nome']} - {west['lng']}""")
-
 else:
     print(f'Erro ao Acessar API.')
